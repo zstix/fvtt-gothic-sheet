@@ -1,0 +1,50 @@
+/* Reset */
+h1, h2, h3, h4, h5, ul, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* Variables */
+
+:root {
+  --color-bg-1: #12110f; /* black */
+  --color-fg-1: #a99877; /* yellow */
+  --color-fg-2: #660000; /* red */
+  --color-fg-3: #F3E6D0; /* off-white */
+
+  --font-primary: normal 14px / 1.75 Arial, sans-serif;
+  --font-heading: bold 18px / 1.75 'Palatino Linotype', Times, serif;
+
+  /* TODO: spacing */
+}
+
+/* General */
+
+body {
+  color: var(--color-fg-1);
+  background-color: var(--color-bg-1);
+  font: var(--font-primary);
+}
+
+h1 {
+  color: var(--color-fg-3);
+  font: var(--font-heading);
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+/* Components */
+
+/* Testing */
+.test {
+  width: 500px;
+  margin: 20px;
+}
