@@ -242,7 +242,24 @@ ul.item-list .icon {
   border: 1px solid #513f2e;
   margin-right: 10px;
   border-radius: var(--border-radius);
+  background-size: cover;
+  background-position: center center;
 }
 
-ul.item-list .name {
+ul.item-list .name {}
+
+ul.item-list .details {
+  margin-left: auto;
+  display: flex;
+  font: var(--font-secondary);
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+ul.item-list .details div {
+  padding: 0 5px;
+  border-right: 1px dotted rgba(81, 63, 46, 0.75);
+}
+
+ul.item-list .controls {
 }
