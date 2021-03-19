@@ -262,6 +262,18 @@ ul.item-list li.open .name {
   font: var(--font-secondary);
 }
 
+ul.item-list .special {
+  background-color: var(--color-fg-2);
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  margin-left: 3px;
+  color: var(--color-bg-1);
+}
+
 ul.item-list .details {
   margin-left: auto;
   display: flex;
