@@ -27,6 +27,7 @@ a {
   --color-fg-2: #660000; /* red */
   --color-fg-3: #F3E6D0; /* off-white */
   --color-fg-4: #221103; /* black */
+  --color-fg-5: #332d24; /* tan */
 
   --font-primary: normal 14px / 1.75 Arial, sans-serif;
   --font-secondary: normal 18px / 1.75 'Palatino Linotype', Times, serif;
@@ -59,7 +60,6 @@ p {
 
 /* Components */
 
-/* TODO finalize */
 .attributes {
   width: 800px;
   height: 200px;
@@ -85,6 +85,35 @@ p {
   max-width: 990px;
   height: 390px;
   background: url('./img/features-bg.jpg') no-repeat -4px 0;
+}
+
+.features__desc .filters {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin-bottom: calc(var(--space-padding) - 5px);
+}
+
+.features__desc .filters > * {
+  font-size: 13px;
+  border: 1px solid var(--color-fg-4);
+  background-color: black;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+}
+
+.features__desc .filters > *:hover {
+  cursor: pointer;
+  color: var(--color-fg-3);
+}
+
+.features__desc .filters > .active {
+  color: var(--color-fg-3);
+  background-color: var(--color-fg-4);
+  border-color: var(--color-fg-5);
 }
 
 .features__skills {
