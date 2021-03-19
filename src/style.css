@@ -129,6 +129,11 @@ p {
   color: var(--color-fg-4);
 }
 
+.features__skills li:hover .name {
+  cursor: pointer;
+  color: var(--color-fg-2);
+}
+
 .features__skills li:nth-child(3n) {
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 60%, rgba(1, 1, 1, 0.1)) 1 / 0 0 1px 0;
 }
@@ -233,6 +238,7 @@ ul.item-list li {
   border-style: solid;
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(81, 63, 46, 0.5)) 1 / 0 0 1px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -246,7 +252,15 @@ ul.item-list .icon {
   background-position: center center;
 }
 
-ul.item-list .name {}
+ul.item-list li .name:hover {
+  cursor: pointer;
+  color: var(--color-fg-3);
+}
+
+ul.item-list li.open .name {
+  color: var(--color-fg-3);
+  font: var(--font-secondary);
+}
 
 ul.item-list .details {
   margin-left: auto;
@@ -261,5 +275,14 @@ ul.item-list .details div {
   border-right: 1px dotted rgba(81, 63, 46, 0.75);
 }
 
-ul.item-list .controls {
+ul.item-list .controls {}
+
+ul.item-list .desc {
+  display: none;
+}
+
+ul.item-list li.open .desc {
+  display: block;
+  flex-basis: 100%;
+  padding: 10px 0;
 }
